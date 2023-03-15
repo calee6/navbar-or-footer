@@ -1,0 +1,93 @@
+html, body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+  
+nav {
+    background-color: cyan;
+}
+  
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+  
+nav li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+  
+  
+  
+  
+  
+nav li a {
+    color: blue;
+    background-color: green;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+  
+.flex2 {
+    display: flex;
+}
+  
+.flex2 li {
+    margin-left: 1rem;
+}
+  
+.bar {
+    background-color: blue;
+    height: 5px;
+    margin: 5px 0px;
+    width: 40px;
+}
+
+.dropdown {
+    right: 355px;
+}
+  
+.dropdown, .dropdown2{
+    background-color: rgb(0, 190, 190);
+    display: block;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 41px;
+    width: 15%;
+}
+
+.dropdown li, .dropdown2 li {
+    margin: 0;
+    padding: 1rem 2rem;
+
+}
+
+.dropdown li:hover, .dropdown2 li:hover {
+    background-color: rgb(0, 116, 116);
+}
+
+.dropdown a, .dropdown2 a {
+    padding: 1rem 2rem;
+}
+
+.dropdown a:hover, .dropdown2 a:hover {
+    color: white;
+}
+  
+.dropdown2{
+    display: block;
+    right: 60px;
+}
+  
+.hamburger-menu {
+    display: none;
+}
+  
+.logo {
+    font-weight: 700;
+}
