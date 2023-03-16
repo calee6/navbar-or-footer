@@ -1,93 +1,87 @@
 html, body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
   
 nav {
     background-color: cyan;
+    font-weight: 700;
+    width: 100%;
 }
-  
+
+nav li {
+    list-style: none;
+}
+
 nav ul {
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 90%;
-}
-  
-nav li {
-    list-style: none;
-    padding: 0.5rem 1rem;
-}
-  
-  
-  
-  
-  
-nav li a {
-    color: blue;
-    background-color: green;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-}
-  
-.flex2 {
-    display: flex;
-}
-  
-.flex2 li {
-    margin-left: 1rem;
-}
-  
-.bar {
-    background-color: blue;
-    height: 5px;
-    margin: 5px 0px;
-    width: 40px;
+    width: 95%;
 }
 
-.dropdown {
-    right: 355px;
-}
-  
-.dropdown, .dropdown2{
-    background-color: rgb(0, 190, 190);
-    display: block;
-    padding: 0;
-    position: absolute;
-    text-align: center;
-    top: 41px;
-    width: 15%;
-}
-
-.dropdown li, .dropdown2 li {
-    margin: 0;
-    padding: 1rem 2rem;
-
-}
-
-.dropdown li:hover, .dropdown2 li:hover {
-    background-color: rgb(0, 116, 116);
-}
-
-.dropdown a, .dropdown2 a {
-    padding: 1rem 2rem;
-}
-
-.dropdown a:hover, .dropdown2 a:hover {
+.dropbtn:hover {
+    background-color:#00c4c4;
     color: white;
 }
-  
-.dropdown2{
-    display: block;
-    right: 60px;
+
+.dropdown, .dropdown2 {
+    position: relative;
 }
-  
-.hamburger-menu {
+
+/*
+.dropdown, .dropdown2 {
     display: none;
 }
-  
-.logo {
-    font-weight: 700;
+*/
+
+.dropdown-menu {
+    align-items: end;
+    background-color: orange;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 150px;
 }
+
+
+
+.dropdown-link {
+    color: black;
+    display: block;
+    height: 100%;
+    padding: 1rem 0rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+} 
+
+.dropdown-link:hover {
+    color: white;
+    background-color: rgb(138, 76, 0);
+}
+
+.flex2 {
+    align-items: center;
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    padding: 1.25rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .flex2 {
+        flex-direction: column;
+    }
+}
+
